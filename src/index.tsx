@@ -1,6 +1,6 @@
-import * as React from 'react';
+import { KeycloakProvider } from "./KeycloakProvider/index";
+import useKeycloakUser from './useKeycloakUser';
+import isLogged from './isLogged/index';
+import useAccess from './KeycloakAccess/hasAccess';
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
-};
+export { KeycloakProvider, useKeycloakUser, isLogged, useAccess }
